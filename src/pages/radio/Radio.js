@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 
 const Radio = () => {
 	return (
-		<Canvas dpr={[1, 2]} camera={{ fov: 60, position: [5, 0, 0] }}>
+		<Canvas pixelRatio={[1, 2]} camera={{ fov: 60, position: [5, 0, 0] }}>
 			{/* <color attach="background" args={['#101010']} /> */}
 
 			<OrbitControls
