@@ -46,7 +46,7 @@ const SideBar = () => {
 					className="menuIcon"
 					onClick={showSidebar}
 				/>
-				<h2>DISCITE</h2>
+				<h2>cognitionis</h2>
 				{/* <AmplifySignOut className="aws-signout" color="#f8c548">
 					Sign Out
 				</AmplifySignOut> */}

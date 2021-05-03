@@ -1,8 +1,8 @@
 import './App.css';
 //
-import Amplify from 'aws-amplify';
-import awsExports from './aws-exports';
-import { withAuthenticator } from '@aws-amplify/ui-react';
+// import Amplify from 'aws-amplify';
+// import awsExports from './aws-exports';
+// import { withAuthenticator } from '@aws-amplify/ui-react';
 //
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ import AboutRadio from './pages/radio/AboutRadio';
 import Radio from './pages/radio/Radio';
 import RadioTrouble from './pages/radio/RadioTrouble';
 
-Amplify.configure(awsExports);
+// Amplify.configure(awsExports);
 
 function App() {
 	return (
@@ -33,4 +33,4 @@ function App() {
 	);
 }
 
-export default withAuthenticator(App);
+export default App;
