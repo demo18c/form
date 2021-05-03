@@ -4,7 +4,8 @@ import './App.css';
 // import awsExports from './aws-exports';
 // import { withAuthenticator } from '@aws-amplify/ui-react';
 //
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Route, Switch } from 'wouter';
 
 import Sidebar from './components/Sidebar';
 
@@ -19,7 +20,7 @@ import RadioTrouble from './pages/radio/RadioTrouble';
 
 function App() {
 	return (
-		<Router>
+		<>
 			<Sidebar />
 			<Switch>
 				<Route exact path="/" component={Dashboard} />
@@ -29,7 +30,7 @@ function App() {
 				<Route path="/radiospec" component={RadioSpec} />
 				<Route path="/radiotrouble" component={RadioTrouble} />
 			</Switch>
-		</Router>
+		</>
 	);
 }
 
