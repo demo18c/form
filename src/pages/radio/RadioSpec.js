@@ -75,12 +75,16 @@ export default function RadioTable() {
 					</TableContainer>
 				</Paper>
 				<>
-					<Button size="large" component={Link} to="/aboutradio" variant="contained" color="default">
-						Back
-					</Button>
-					<Button size="large" component={Link} to="/radio" variant="contained" color="default">
-						Next
-					</Button>
+					<Link to="/aboutradio">
+						<Button size="large" variant="contained" color="default">
+							Back
+						</Button>
+					</Link>
+					<Link to="/radio">
+						<Button size="large" variant="contained" color="default">
+							Next
+						</Button>
+					</Link>
 				</>
 			</Grid>
 		</Grid>
