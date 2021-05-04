@@ -1,3 +1,4 @@
+import React, { Suspense } from 'react';
 import './App.css';
 //
 // import Amplify from 'aws-amplify';
@@ -22,14 +23,16 @@ function App() {
 	return (
 		<Router>
 			<Sidebar />
-			<Switch>
-				<Route exact path="/" component={Dashboard} />
-				<Route path="/overview" component={Overview} />
-				<Route path="/aboutradio" component={AboutRadio} />
-				<Route path="/radio" component={Radio} />
-				<Route path="/radiospec" component={RadioSpec} />
-				<Route path="/radiotrouble" component={RadioTrouble} />
-			</Switch>
+			<Suspense fallback={<div>Loading...</div>}>
+				<Switch>
+					<Route exact path="/" component={Dashboard} />
+					<Route path="/overview" component={Overview} />
+					<Route path="/aboutradio" component={AboutRadio} />
+					<Route path="/radio" component={Radio} />
+					<Route path="/radiospec" component={RadioSpec} />
+					<Route path="/radiotrouble" component={RadioTrouble} />
+				</Switch>
+			</Suspense>
 		</Router>
 	);
 }
